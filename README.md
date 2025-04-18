@@ -20,3 +20,5 @@ First to reach 5 points wins
 Game Over popup modal with the result and a Play Again button
 You can dismiss the modal by clicking outside it
 Clicking again after dismissing will re-show the result modal
+
+Live preview https://djordjejasic.github.io/Rock-paper-scissors/
