@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mace Sword Axe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Mace Sword Axe</h1>
+    </header>
+    <main class="main">
+      <div class="scoreboard">
+        <div class="game_rules">
+          <h2 class="title1">Chose your weapon</h2>
+          <ul id="rules_list">
+            <li>Mace beats Sword but loses to Axe</li>
+            <li>Sword beats Axe but loses to Mace</li>
+            <li>Axe beats Mace but loses to Sword</li>
+          </ul>
+        </div>
+        <h4 class="game_time">First to score 5 points wins the game</h4>
+        <div class="scores">
+          <div class="score_container">
+            <div class="sign" id="playerSign">?</div>
+            <p class="score" id="playerScore">Player: 0</p>
+          </div>
+          <div class="score_container">
+            <div class="sign" id="computerSign">?</div>
+            <p class="score" id="computerScore">Computer: 0</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="btnMace">
+            <div class="sign"><img class="item_img" src="mace.png" /></div>
+          </button>
+          <button class="btn" id="btnSword">
+            <div class="sign"><img class="item_img" src="sword.png" /></div>
+          </button>
+          <button class="btn" id="btnAxe">
+            <div class="sign"><img class="item_img" src="axe.png" /></div>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer_text">Copyright ©</p>
+      <a
+        href="https://github.com/DjordjeJasic"
+        class="footer_link"
+        target="_blank"
+      >
+        <img class="footer_img" src="github_logo.png"
+      /></a>
+    </footer>
+
+    <!-- Modal -->
+    <div id="gameOverModal" class="modal">
+      <div class="modal-content">
+        <h2 id="winnerMessage"></h2>
+        <button id="playAgainBtn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
